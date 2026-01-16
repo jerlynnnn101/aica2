@@ -19,6 +19,7 @@
             <div class="nav-links">
                 <button class="nav-link" onclick="scrollToWhy()">About</button>
                 <button class="nav-link" onclick="scrollToFeatures()">Features</button>
+                <button class="nav-link" onclick="scrollToContact()">Contact Us</button>
             </div>
         </div>
     </nav>
@@ -102,6 +103,31 @@
                         </video>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section" id="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p class="section-subtitle">Have questions about Melo? We'd love to hear from you!</p>
+            <div class="contact-content">
+                <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Your message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
