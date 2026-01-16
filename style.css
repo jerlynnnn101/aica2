@@ -86,6 +86,34 @@ body {
 
 
 
+/* Poster Section */
+.poster-section {
+    background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+    padding: 40px 0;
+}
+
+.poster-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(100, 200, 255, 0.2);
+    display: block;
+    margin: 0 auto;
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Sections */
 section {
     padding: 80px 0;
